@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+ p,
+ label {
+   font:
+     rem 'Fira Sans',
+     sans-serif;
+ }
+legend{
+  font-size: 50px;
+}
+ input {
+   margin: 0.4rem;
+ }

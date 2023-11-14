@@ -1,0 +1,25 @@
+<h1> My tasks </h1>
+<ul>
+  <% @tasks.each do |task| %>
+    <li> <%= link_to task.title, task_path(task)%> <%= task.details%></li>
+  <% end %>
+</ul>
+<button><%=link_to "Create task",tasks_new_path %></button>
+
+<%#
+<form action="" method="get" class="form-example">
+<fieldset>
+  <legend>My Tasks :</legend>
+
+  <div>
+    <input type="checkbox" id="scales" name="scales" checked />
+    <label for="scales">Laundry</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="horns" name="horns" />
+    <label for="horns">Study</label>
+  </div>
+</fieldset>
+
+  </form> %>
